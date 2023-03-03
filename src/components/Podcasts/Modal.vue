@@ -33,7 +33,6 @@
     <footer class="card-footer is-flex-wrap-wrap">
         <a v-for="tags in casts.categories" :key="tags" href="#" class="card-footer-item">{{ tags }}</a>
     </footer>
-    <button class="modal-close is-large" aria-label="close" @click="cancelModal"></button>
     </div>
 </template>
     

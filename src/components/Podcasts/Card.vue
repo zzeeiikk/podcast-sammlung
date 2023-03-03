@@ -40,6 +40,7 @@
         <div class="modal-background" @click="cancelModal"></div>
         <div class="modal-content">
             <Modal :casts="casts" />
+            <button class="modal-close is-large" aria-label="close" @click="cancelModal"></button>
         </div>
     </div>
 </template>
