@@ -1,11 +1,11 @@
 <template>
-    <div class="card-image">
+    <div class="card-image" @click="showModal">
         <figure class="image is-square">
             <img :src="casts.imgURL" :alt="'Podcast Cover von ' + casts.title" />
         </figure>
     </div>
 
-    <div class="card-content is-clipped">
+    <div class="card-content is-clipped" @click="showModal">
         <div class="media">
             <div class="media-content">
                 <p class="title is-4">{{ name }}</p>
@@ -13,7 +13,7 @@
             </div>
         </div>
 
-        <div class="content has-text-left">{{ casts.description }}</div>
+        <div class="content has-text-left" @click="showModal">{{ casts.description }}</div>
 
         <a :href="casts.htmlURL" target="_blank">
             <button class="button">
@@ -32,14 +32,28 @@
     <footer class="card-footer is-flex-wrap-wrap">
         <a v-for="tags in casts.categories" :key="tags" href="#" class="card-footer-item">{{ tags }}</a>
     </footer>
+
+
+
+    <!-- Modal -->
+    <div class="modal" :class="{ 'is-active': showModalFlag }">
+        <div class="modal-background" @click="cancelModal"></div>
+        <div class="modal-content">
+            <Modal :casts="casts" />
+        </div>
+    </div>
 </template>
     
     
 <script>
 import axios from "axios";
+import Modal from "./Modal.vue";
 
 export default {
     name: "Card-View",
+    components: {
+        Modal,
+    },
     props: ["id", "name", "daten"],
 
     data() {
@@ -49,17 +63,27 @@ export default {
         };
     },
 
+    methods: {
+        showModal() {
+            this.okPressed = false;
+            this.showModalFlag = true;
+        },
+        cancelModal() {
+            this.okPressed = false;
+            this.showModalFlag = false;
+        },
+    },
+
     async mounted() {
-    if (this.id == null) {
-      this.casts = this.daten;
-      // console.log(this.casts);
-    }
-    else {
-      let result = await axios.get("https://api.fyyd.de/0.2/podcast?podcast_id=" + this.id);
-      // console.log(this.id);
-      this.casts = result.data.data;
-    }
-  },
+        if (this.id == null) {
+            this.casts = this.daten;
+            // console.log(this.daten);
+        }
+        else {
+            let result = await axios.get("https://api.fyyd.de/0.2/podcast?podcast_id=" + this.id);
+            this.casts = result.data.data;
+        }
+    },
 }
 </script>
 

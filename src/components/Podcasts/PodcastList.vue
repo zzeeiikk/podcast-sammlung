@@ -14,9 +14,11 @@
             <Card :id="id.id" :name="id.title" :daten="id" />
 
           </div>
-
         </div>
       </div>
+
+
+
 
 
 
