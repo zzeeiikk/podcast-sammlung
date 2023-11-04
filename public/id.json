@@ -1,5 +1,39 @@
 [
     {
+        "title":"Billion Dollar Apes – Kunst, Gier, NFTs",
+        "id": 82654
+    },
+    {
+        "title": "Die Fascho-Jägerin?! – Der Fall Lina E. und seine Folgen",
+        "id": null,
+        "htmlURL": "https://www.ardaudiothek.de/sendung/die-fascho-jaegerin-der-fall-lina-e-und-seine-folgen/94838298/",
+        "imgURL": "https://api.ardmediathek.de/image-service/images/urn:ard:image:704bbbc35ca05037?w=448&ch=eaaf74bacdbd8279",
+        "description": "Der Fall Lina E. hat bundesweit Schlagzeilen gemacht. Die junge Studentin stand als Staatsfeindin vor Gericht und wurde als Linksextremistin verurteilt. Für viele Linke ist sie dagegen eine Ikone, \"Free Lina\" steht an zahllosen Häuserwänden in Leipzig und vielen anderen Städten. Es gab etliche Demonstrationen bundesweit, die sich mit ihr solidarisiert haben. Im Podcast suchen wir die Antworten auf folgende Fragen: Wer ist Lina E.? Warum hat sie sich radikalisiert? Haben wir es wirklich mit einer neuen Dimension linker Gewalt zu tun? Und wie weit darf Antifaschismus gehen? Wir zeichnen den Fall Lina E. nach, widmen uns ihrer Person und den Taten, die der Gruppe zugeschrieben werden. Auch dem Mammut-Gerichtsprozess sowie der politischen Diskussion, die der Fall ausgelöst hat. Und wir erklären, warum diese Geschichte bundesweit Bedeutung hat.",
+        "author": "MDR, Edgar Lopez, Anton Zirk und Marc Zimmer",
+        "xmlURL": "https://www.mdr.de/nachrichten/podcast/lina-e/die-faschojaegerin-linksextremismus-100-podcast.xml"
+    },    
+    {
+        "title": "Der Spion in unseren Handys",
+        "id": 82042
+    },
+    {
+        "title": "Lubi - Ein Polizist stürzt ab",
+        "id": "82070"
+    },
+    {
+        "title": "Der Mann in Merkels Rechner - Jagd auf Putins Hacker",
+        "id": 74713
+    },
+    {
+        "title": "Der Jahrhundert-Coup",
+        "id": null,
+        "htmlURL": "https://der-jahrhundert-coup.blogs.julephosting.de/",
+        "imgURL": "https://cdn.julephosting.de/podcasts/1001-der-jahrhundert-coup/1001_cover_540_540.jpg?v=2",
+        "description": "Hören Sie \"Der Jahrhundert-Coup\", der neue Podcast der Dresdner Neuesten Nachrichten zum Juwelendiebstahl im Grünen Gewölbe von Dresden mit Dirk Birgel, Chefredakteur der Dresdner Neuesten Nachrichten und Dr. Butz Peters, Rechtsanwalt, Publizist und Kenner der Clan-Szene.",
+        "author": "Dresdner Neueste Nachrichten (DNN)",
+        "xmlURL": "https://podcasts.apple.com/podcast/idhttps://podcastsconnect.apple.com/my-podcasts/show/der-jahrhundert-coup/5fa5c93e-c187-460a-a0ef-8159ea4b61b8"
+    },    
+    {
         "title": "Wild Wild Web - Der Pornhub Effekt",
         "id": "75501"
     },
