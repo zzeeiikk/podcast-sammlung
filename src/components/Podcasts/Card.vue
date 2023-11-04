@@ -30,7 +30,7 @@
     </div>
 
     <footer class="card-footer is-flex-wrap-wrap">
-        <a v-for="tags in casts.categories" :key="tags" href="#" class="card-footer-item">{{ tags }}</a>
+        <CardFooter :casts="casts" />
     </footer>
 
 
@@ -49,11 +49,13 @@
 <script>
 import axios from "axios";
 import Modal from "./Modal.vue";
+import CardFooter from "./CardFooter.vue";
 
 export default {
     name: "Card-View",
     components: {
         Modal,
+        CardFooter,
     },
     props: ["id", "name", "daten"],
 
@@ -83,8 +85,15 @@ export default {
         else {
             let result = await axios.get("https://api.fyyd.de/0.2/podcast?podcast_id=" + this.id);
             this.casts = result.data.data;
+            // console.log(this.casts);
         }
     },
 }
 </script>
 
+<style>
+.card {
+    /* background-color: green; */
+    min-height: 50%;
+}
+</style>
